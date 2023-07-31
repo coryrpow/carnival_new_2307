@@ -17,6 +17,17 @@ RSpec.describe Visitor do
     end
   end
 
+  describe "#add_preference" do
+    it "can add preferences to the preference array" do
+      @visitor1.add_preference(:gentle)
+      @visitor1.add_preference(:thrilling)
+
+      expect(@visitor1.preferences).to eq([:gentle, :thrilling])
+    end
+  end
+
+  
+
 
 
 
