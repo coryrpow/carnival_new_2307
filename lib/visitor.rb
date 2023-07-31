@@ -15,4 +15,12 @@ class Visitor
     @preferences << preference
     @preferences
   end
+
+  def tall_enough?(minimum_height)
+    if @height >= minimum_height
+      true
+    else
+      false
+    end
+  end
 end
